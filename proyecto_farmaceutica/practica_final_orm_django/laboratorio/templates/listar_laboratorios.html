@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Laboratorios</title>
+</head>
+<body>
+    <h1>Listado de Laboratorios</h1>
+    <ul>
+        {% for laboratorio in laboratorios %}
+            <li>{{ laboratorio.nombre }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'insertar_laboratorio' %}">Insertar Laboratorio</a>
+</body>
+</html>

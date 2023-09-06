@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modificar Laboratorio</title>
+</head>
+<body>
+    <h1>Modificar Laboratorio</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Guardar Cambios">
+    </form>
+    <a href="{% url 'listar_laboratorios' %}">Volver al Listado</a>
+</body>
+</html>
